@@ -257,6 +257,7 @@ def get_data_from_image(image_path) -> None:
     # OCR Step
     
     cv2.imshow('Image with OCR Text', pattern_identified_image)
+    cv2.imwrite('cOIP.jpg', pattern_identified_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
